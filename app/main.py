@@ -1,14 +1,14 @@
 from fastapi import FastAPI
 
-from app.schema.input import TextInput
-from app.service.llm_extractor import llm_extraction
+from app.schema.input import Input
+from app.service.llm_extractor import extract_definitions_and_concepts
 
 app = FastAPI(title="Legal Definitions Extractor API")
 
 
 @app.post("/extract-definitions")
-def extract_definitions(input: TextInput):
-    return llm_extraction(input.text)
+def extract_definitions(input: Input):
+    return extract_definitions_and_concepts(input.text, input.doc_id, input.section_id)
 
 @app.get("/")
 def read_root():

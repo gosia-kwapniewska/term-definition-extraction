@@ -14,7 +14,8 @@ INSTRUCTIONS:
 2. Definitions "in the text" must state what something IS or MEANS. Ignore:
    - statements of duty, permission, or rights ("shall", "must", etc.)
    - descriptions of how something is used or what it does
-   - trivial restatements that add no information
+   - trivial restatements that add no information.
+   The definition should be word by word taken from the original text (with exception fo point 7).
 3. Definitions "by external reference" include references to outside sources ("as defined in...", "in accordance with...", "prescribed by..."). Ignore circular self-references (e.g., "see section 123").
 4. If a concept has alternative terms, include them.
 5. If concepts form a hierarchy (one is a more specific case of another), use "subclass_of".
